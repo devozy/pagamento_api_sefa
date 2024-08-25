@@ -29,7 +29,7 @@ public class PagamentoController {
     }
 
     @PutMapping("/{id}/status")
-    @Operation(summary = "Atualiza o status de um pagamento. Primeiro verifica se ha pagamentos para atualizar.")
+    @Operation(summary = "Atualiza o status de um pagamento. Necessario incluir pagamento primeiro.")
     public ResponseEntity<PagamentoDto> atualizarStatusPagamento(
             @PathVariable Long id,
             @RequestParam StatusPagamentoEnum novoStatus) {
