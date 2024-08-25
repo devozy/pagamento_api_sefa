@@ -12,7 +12,7 @@ POST
 Pagamento com BOLETO (erro 500)
 {
   "id": 0,
-  "codigoDebito": 101,
+  "codigoDebito": 120,
   "cpfCnpj": "123.456.789-10",
   "numeroCartao": "5451425203",
   "valorPagamento": 130,
@@ -24,9 +24,8 @@ Pagamento com BOLETO (erro 500)
 Pagamento com BOLETO (sem erro)
 {
   "id": 0,
-  "codigoDebito": 101,
+  "codigoDebito": 120,
   "cpfCnpj": "123.456.789-10",
-  "numeroCartao": "5451425203",
   "valorPagamento": 130,
   "tipoPagamento": "BOLETO",
   "statusPagamento": "PENDENTE_PROCESSAMENTO",
@@ -60,8 +59,8 @@ Pagamento com PIX (sem erro)
 Pagamento com cartão (erro 400)
 {
   "id": 0,
-  "codigoDebito": 020,
-  "cpfCnpj": "555.998.825-51",
+  "codigoDebito": 123,
+  "cpfCnpj": "123.456.789-10",
   "valorPagamento": 2000,
   "tipoPagamento": "CARTAO_CREDITO",
   "statusPagamento": "PENDENTE_PROCESSAMENTO",
@@ -72,8 +71,8 @@ Pagamento com cartão (erro 400)
 Pagamento com cartão (sem erro)
 {
   "id": 0,
-  "codigoDebito": 120,
-  "cpfCnpj": "888.515.122-10",
+  "codigoDebito": 123,
+  "cpfCnpj": "123.456.789-10",
   "numeroCartao": "5251425203",
   "valorPagamento": 120,
   "tipoPagamento": "CARTAO_CREDITO",
