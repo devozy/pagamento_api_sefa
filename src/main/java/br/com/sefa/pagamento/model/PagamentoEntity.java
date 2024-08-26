@@ -30,9 +30,6 @@ public class PagamentoEntity {
     @Enumerated(EnumType.STRING)
     private StatusPagamentoEnum statusPagamento;
 
-    @Column(nullable = false)
-    private boolean ativo = true;
-
     public PagamentoEntity() {}
 
     public PagamentoEntity(Integer codigoDebito, String numeroCartao, String cpfCnpj,
@@ -102,13 +99,7 @@ public class PagamentoEntity {
         this.statusPagamento = statusPagamento;
     }
 
-    public boolean isAtivo() {
-        return ativo;
-    }
 
-    public void setAtivo(boolean ativo) {
-        this.ativo = ativo;
-    }
 
     @Override
     public boolean equals(Object o) {

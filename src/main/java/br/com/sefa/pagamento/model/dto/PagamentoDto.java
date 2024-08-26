@@ -12,7 +12,6 @@ public class PagamentoDto {
     private Double valorPagamento;
     private TipoPagamentoEnum tipoPagamento;
     private StatusPagamentoEnum statusPagamento;
-    private boolean ativo;
 
     public Long getId() {
         return id;
@@ -68,13 +67,5 @@ public class PagamentoDto {
 
     public void setStatusPagamento(StatusPagamentoEnum statusPagamento) {
         this.statusPagamento = statusPagamento;
-    }
-
-    public boolean isAtivo() {
-        return ativo;
-    }
-
-    public void setAtivo(boolean ativo) {
-        this.ativo = ativo;
     }
 }

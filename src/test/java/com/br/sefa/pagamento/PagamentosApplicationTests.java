@@ -35,7 +35,6 @@ class PagamentoServiceTest {
         pagamentoDto.setValorPagamento(100.0);
         pagamentoDto.setTipoPagamento(TipoPagamentoEnum.CARTAO_CREDITO);
         pagamentoDto.setStatusPagamento(StatusPagamentoEnum.PENDENTE_PROCESSAMENTO); 
-        pagamentoDto.setAtivo(true);
 
         PagamentoEntity pagamentoEntity = new PagamentoEntity();
         pagamentoEntity.setCodigoDebito(123);
@@ -44,7 +43,6 @@ class PagamentoServiceTest {
         pagamentoEntity.setValorPagamento(100.0);
         pagamentoEntity.setTipoPagamentoEnum(TipoPagamentoEnum.CARTAO_CREDITO); 
         pagamentoEntity.setStatusPagamentoEnum(StatusPagamentoEnum.PENDENTE_PROCESSAMENTO); 
-        pagamentoEntity.setAtivo(true);
 
         when(pagamentoRepository.save(any(PagamentoEntity.class))).thenReturn(pagamentoEntity);
 
@@ -57,6 +55,5 @@ class PagamentoServiceTest {
         assertEquals(pagamentoDto.getValorPagamento(), result.getValorPagamento());
         assertEquals(pagamentoDto.getTipoPagamento(), result.getTipoPagamento());
         assertEquals(pagamentoDto.getStatusPagamento(), result.getStatusPagamento());
-        assertEquals(pagamentoDto.isAtivo(), result.isAtivo());
     }
 }
